@@ -3,10 +3,23 @@ import model.Booking;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class MainMethod {
     public static void main(String[] args) {
         System.out.println("Yes");
+        Scanner myObj = new Scanner(System.in);
+        System.out.println("Enter Name: ");
+        String name = myObj.nextLine();  // Read user input
+        System.out.println("Enter Age : ");
+        int age = myObj.nextInt();
+        System.out.println("Enter Salary : ");
+        double salary = myObj.nextDouble();
+
+        // Output input by user
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Salary: " + salary);
         List<Book> books = new ArrayList<Book>();
         List<Booking> bookings = new ArrayList<Booking>();
         Processing p = new Processing();
